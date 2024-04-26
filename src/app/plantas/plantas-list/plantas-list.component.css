@@ -3,9 +3,11 @@
   padding: 20px;
   box-sizing: border-box;
 }
-
-h2 {
-  text-align: center;
+hr {
+  height: 1px; 
+  background-color: #ddd; 
+  border: none; 
+  margin: 20px 0;
 }
 
 table {
