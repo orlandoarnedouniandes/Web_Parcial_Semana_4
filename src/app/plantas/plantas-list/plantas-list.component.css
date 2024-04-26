@@ -15,12 +15,13 @@ table {
 }
 
 th, td {
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   text-align: left;
   padding: 8px;
 }
 
 th {
+  font-size: 17px;
   background-color: #333A40;
   color: white;
 }
@@ -30,13 +31,25 @@ tr:nth-child(even) {
 }
 
 tfoot td {
-  font-weight: bold;
-  background-color: #e8e8e8;
+  border-style: none;
 }
-
+.plantas-list-title{
+    font-size: 32px;
+}
 .vivero-image {  
   display: block;
   margin: 0 auto; 
   max-width: 100%; 
   height: auto; 
+}
+.plantas-list-item-number{
+  font-weight: bold;
+}
+.plantas-list-row-detail{
+  font-size: 15px;
+
+}
+.plantas-list-footer-totals{
+  font-size: 14px;
+  font-weight:bold;
 }

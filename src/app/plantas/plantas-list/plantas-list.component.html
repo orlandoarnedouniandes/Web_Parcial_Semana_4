@@ -15,14 +15,22 @@
         </thead>
         <tbody>
           <tr *ngFor="let planta of plantas; let i = index">
-            <td>{{ i + 1 }}</td>
-            <td>{{ planta.nombre_comun }}</td>
-            <td>{{ planta.tipo }}</td>
-            <td>{{ planta.clima }}</td>
+            <td><span class="plantas-list-item-number">{{ i + 1 }}</span></td>
+            <td><span class="plantas-list-row-detail">{{ planta.nombre_comun }}</span></td>
+            <td><span class="plantas-list-row-detail">{{ planta.tipo }}</span></td>
+            <td><span class="plantas-list-row-detail">{{ planta.clima }}</span></td>
           </tr>
         </tbody>
         <tfoot>
-          
+          <tr>
+            <td colspan="4">
+                <div class="plantas-list-footer-totals"> 
+                    <div>Total plantas de interior: {{ totalInterior }}</div>
+                    <div>Total plantas de exterior: {{ totalExterior }}</div>
+                </div>
+            </td>
+            
+          </tr>
         </tfoot>
       </table>
   </div>
