@@ -1,0 +1,57 @@
+.plantas-list-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+hr {
+  height: 1px; 
+  background-color: #ddd; 
+  border: none; 
+  margin: 20px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-size: 17px;
+  background-color: #333A40;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tfoot td {
+  border-style: none;
+}
+.plantas-list-title{
+    font-size: 32px;
+}
+.vivero-image {  
+  display: block;
+  margin: 0 auto; 
+  max-width: 100%; 
+  height: auto; 
+}
+.plantas-list-item-number{
+  font-weight: bold;
+}
+.plantas-list-row-detail{
+  font-size: 15px;
+
+}
+.plantas-list-footer-totals{
+  font-size: 14px;
+  font-weight:bold;
+}
