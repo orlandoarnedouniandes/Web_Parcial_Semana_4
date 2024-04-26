@@ -1,1 +1,29 @@
-<p>plantas-list works!</p>
+<div class="plantas-list-container">
+  <div class="plantas-list-title">Vivero El Otoño</div>
+  <div class="plantas-list-image">
+    <img src="../../../assets/plantas/vivero-image.png" alt="Vivero El Otoño" class="vivero-image"/>
+  </div>
+  <div class="plantas-list-table">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre común</th>
+            <th>Tipo</th>
+            <th>Clima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let planta of plantas; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ planta.nombre_comun }}</td>
+            <td>{{ planta.tipo }}</td>
+            <td>{{ planta.clima }}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          
+        </tfoot>
+      </table>
+  </div>
+</div>

@@ -2,7 +2,7 @@ import { Planta } from './planta.model';
 
 class PlantaClass implements Planta {
   constructor(
-    public nombreComun: string,
+    public nombre_comun: string,
     public nombre_cientifico: string,
     public tipo: string,
     public altura_maxima: number,
@@ -21,7 +21,7 @@ describe('PlantaClass', () => {
       'Tierra orgánica...'
     );
     expect(planta).toBeTruthy();
-    expect(planta.nombreComun).toEqual('Lengua de vaca');
+    expect(planta.nombre_comun).toEqual('Lengua de vaca');
     expect(planta.nombre_cientifico).toEqual('Sansevieria Trifasciata');
     expect(planta.tipo).toEqual('Interior');
     expect(planta.altura_maxima).toEqual(140);
